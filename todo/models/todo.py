@@ -1,6 +1,6 @@
 import datetime 
 from . import db 
- 
+
 class Todo(db.Model): 
    __tablename__ = 'todos' 
  

@@ -2,7 +2,7 @@ from flask import Blueprint, jsonify, request
 from todo.models import db 
 from todo.models.todo import Todo 
 from datetime import datetime, timedelta
- 
+
 api = Blueprint('api', __name__, url_prefix='/api/v1') 
 
 TEST_ITEM = {
@@ -14,7 +14,7 @@ TEST_ITEM = {
     "created_at": "2023-02-20T00:00:00",
     "updated_at": "2023-02-20T00:00:00"
 }
- 
+
 @api.route('/health') 
 def health():
     """Return a status of 'ok' if the server is running and listening to request"""
